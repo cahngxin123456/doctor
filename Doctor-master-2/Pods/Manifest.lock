@@ -1,0 +1,29 @@
+PODS:
+  - DACircularProgress (2.3.1)
+  - Masonry (1.0.2)
+  - MJRefresh (3.1.12)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.1.2)
+  - UMengAnalytics (4.1.8)
+
+DEPENDENCIES:
+  - DACircularProgress (~> 2.3.1)
+  - Masonry
+  - MJRefresh (~> 3.1.12)
+  - SDWebImage
+  - SVProgressHUD (~> 2.1.2)
+  - UMengAnalytics
+
+SPEC CHECKSUMS:
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  UMengAnalytics: 6ef66c49bea0779d2ce02a72d862510d97619a7a
+
+PODFILE CHECKSUM: b2cdb9710209803becfb107fdf11fba4f64348a6
+
+COCOAPODS: 1.1.1

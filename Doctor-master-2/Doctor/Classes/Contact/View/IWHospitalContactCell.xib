@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="IWHospitalContactCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-5K-4Zu">
+                        <rect key="frame" x="8" y="8" width="90" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="RI0-jl-1CP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uf-1E-NaB">
+                        <rect key="frame" x="98" y="8" width="174" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub4-0H-oVu">
+                        <rect key="frame" x="280" y="8" width="32" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="2gG-fa-Mmr"/>
+                        </constraints>
+                        <state key="normal" image="phone_normal"/>
+                        <connections>
+                            <action selector="loadPhone:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bVN-0L-UYz"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ub4-0H-oVu" secondAttribute="bottom" id="5CB-bz-z4c"/>
+                    <constraint firstItem="qJZ-5K-4Zu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7a4-Ac-IlM"/>
+                    <constraint firstItem="Ub4-0H-oVu" firstAttribute="leading" secondItem="0uf-1E-NaB" secondAttribute="trailing" constant="8" id="Haf-ae-3vc"/>
+                    <constraint firstItem="0uf-1E-NaB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Mep-7w-mZo"/>
+                    <constraint firstAttribute="bottom" secondItem="0uf-1E-NaB" secondAttribute="bottom" constant="8" id="R6j-TG-8TJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qJZ-5K-4Zu" secondAttribute="bottom" id="V1W-0V-Mmk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ub4-0H-oVu" secondAttribute="trailing" id="g9W-Tj-6rt"/>
+                    <constraint firstItem="0uf-1E-NaB" firstAttribute="leading" secondItem="qJZ-5K-4Zu" secondAttribute="trailing" id="kMo-2H-zat"/>
+                    <constraint firstItem="qJZ-5K-4Zu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pib-BM-BcZ"/>
+                    <constraint firstItem="Ub4-0H-oVu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="qSc-J5-TUj"/>
+                    <constraint firstItem="qJZ-5K-4Zu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yQC-pb-0e6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelName" destination="qJZ-5K-4Zu" id="VeU-Rh-oM0"/>
+                <outlet property="labelPhone" destination="0uf-1E-NaB" id="HA5-Jk-6ht"/>
+            </connections>
+            <point key="canvasLocation" x="-95" y="-110"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="phone_normal" width="13" height="13"/>
+    </resources>
+</document>
